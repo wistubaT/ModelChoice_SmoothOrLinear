@@ -1,0 +1,6 @@
+nslopes;beta;nObs_fit;nObs_test;funs;se;nDatasets;maxIter
+25;-2;150;1000;sin(-1*(2*x)^2-0.6*(2*x)^3);1.95;100;500
+;-1;;;sqrt(abs(x))*2;;;
+;1;;;10*x^2;;;
+;2;;;;;;
+;3;;;;;;
