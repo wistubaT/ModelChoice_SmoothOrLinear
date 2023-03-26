@@ -71,7 +71,7 @@ for(i in 1:length(fileNames)){
   }
 }
 
-pdf("tables.pdf", pointsize = 6, width = 10, height = 9)
+pdf("Plots/tables.pdf", pointsize = 6, width = 10, height = 9)
 for(k_each in seq(1,length(resList), by = 3)){
   estEff1 <- resList[[k_each]][[9]]
   estEff2 <- resList[[k_each+1]][[9]]
@@ -131,7 +131,7 @@ for(k_each in seq(1,length(resList), by = 3)){
 }
 dev.off()
 
-pdf("boxplots_RMSE.pdf", width = 7, height = 4, pointsize = 0.2)
+pdf("Plots/boxplots_RMSE.pdf", width = 7, height = 4, pointsize = 0.2)
 par(mar = c(7.5,6,2,2))
 for(k_each in seq(1,length(resList), by = 3)){
   rmse1Train <- resList[[k_each]][[4]]
