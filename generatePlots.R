@@ -142,7 +142,7 @@ for(k_each in seq(1,length(resList), by = 3)){
   rmse3Test <- resList[[k_each+2]][[5]]
   df <- data.frame(rmse1Train,rmse2Train,rmse3Train,rmse1Test,rmse2Test,rmse3Test)
   
-  boxplot(df, axes = F)
+  boxplot(df, axes = F, main = paste0("Boxplot for setup\n", strtrim(fileNames[i], nchar(fileNames[i])-4)))
   corns <- par("usr")
   title(ylab = "Root Mean Square Error (RMSE)", cex.lab = 1.5, line = 4)
   axis(2, pretty(c(min(df), max(df))), las = 1, cex.axis = 1.5)
