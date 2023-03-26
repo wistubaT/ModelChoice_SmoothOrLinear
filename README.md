@@ -12,4 +12,13 @@ Necessary R-packages: mboost, plyr
 Make sure to install these packages prior to running the files "testSetups.R" and "generatePlots.R".
 
 ## Creating your own setups
-Hello
+Custom setups can be created with the file "#000Default.xlsx". The total number of linear and uninformative predictors is determined in the column "nslopes". The slopes of all informative linear predictors are set in the column "beta".  Each slope is included in one respective cell. The columns "nObs_fit" and "nObs_test" determine the sample sizes of the training and testing datasets for the simulations. The non-linear effects of all smooth predictors are determined in the column "funs". The effect of each smooth predictor has to be included in one cell each. The smooth functions have to be defined in R-syntax with "x" the variable name. The standard deviation for the normally distributed error term, the total number of simulations that should be performed and the number of maximum boosting iterations for all simulations are determined in the columns "se", "nDatasets" and "maxIter" respectively. The setup file needs to be saved as a csv-file. Note that the custom setup file must not have a name so that it appears before the "#000Default.xlsx" file.<br/>
+A setup file for a dataset with 5 linear predictors with slopes 1,2,3,4 and 5, 5 uninformative predictors, 100 observations for the training dataset, 200 observations for the testing dataset, a sine function for a smooth predictor, a cosine function for another smooth predictor, a standard deviation of 1 for the normally distributed error term, 100 simulation runs and 1000 boosting iterations for each simulation is created with the following table that has to be saved as a csv-file:<br/>
+<br/>
+nslopes | beta | nObs_fit | nObs_test | funs | se | nDatasets | maxIter
+:---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
+10 | 1 | 100 | 200 | sin(x) | 1 | 100 | 1000
+  | 2 |   |   | cos(x) |   |   |  
+  | 3 |   |   |   |   |   |  
+  | 4 |   |   |   |   |   |  
+  | 5 |   |   |   |   |   |  
