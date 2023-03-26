@@ -1,4 +1,4 @@
-# ModelChoice_SmoothOrLinear
+# Model Choice - Smooth or Linear?
 In this Github repository you can find the code to run the simluations from the paper "Linear or smooth? Enhanced model choice in boosting via deselection of base-learners". You can also create your own setups to test the proposed procedure for variable selection and model choice.
 <br/>
 <br/>
