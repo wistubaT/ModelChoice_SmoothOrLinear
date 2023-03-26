@@ -1,10 +1,10 @@
 library(mboost)
 library(plyr)
 
-source("DeselectBoost2.R")
-source("linChoiceBoost.R")
-source("makeDataset.R")
-source("simulatePerformance.R")
+source("Methods/DeselectBoost2.R")
+source("Methods/linChoiceBoost.R")
+source("Methods/makeDataset.R")
+source("Methods/simulatePerformance.R")
 options(mboost_dftraceS = FALSE)
 
 fileNames <- list.files("Setups/")
