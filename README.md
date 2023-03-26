@@ -18,7 +18,7 @@ A setup file for a dataset with 5 linear predictors with slopes 1,2,3,4 and 5, 5
 nslopes | beta | nObs_fit | nObs_test | funs | se | nDatasets | maxIter
 :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
 10 | 1 | 100 | 200 | sin(x) | 1 | 100 | 1000
-   | 2 |   |   | cos(x) |   |   |  
-  | 3 |   |   |   |   |   |  
-  | 4 |   |   |   |   |   |  
-  | 5 |   |   |   |   |   |  
+|  | 2 |   |   | cos(x) |   |   |  
+|  | 3 |   |   |   |   |   |  
+|  | 4 |   |   |   |   |   |  
+|  | 5 |   |   |   |   |   |  
